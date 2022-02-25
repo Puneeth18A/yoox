@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 80%;
+            display: flex;
+            background-color: gray;
+            margin-left: 80px;
+            justify-content: space-around;
+        }
+        #leftdiv{
+            width: 60%;
+            margin-left: 80px;
+            
+
+        }
+        #leftdiv>input{
+            display: block;
+            height: 40px;
+            width: 60%;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: rgb(129, 170, 245);
+            width: 50%;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+          margin-left: 200px;
+
+        }
+        #rightdiv{
+            width: 30%;
+
+        }
+        #midNavbar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+            margin-top: -0.30%;
+            position: sticky;
+            top: 0;
+            background-color: white;
+
+            
+        }
+        .midMid{
+
+         text-align: center;
+         margin-top: -25px;
+
+
+          }
+          .midMid>div>h1{
+              margin-left: 250px;
+          }
+          .midRight{
+            text-align: center;
+            margin-top: -25px;
+          }
+
+    </style>
+</head>
+<body>
+    <div id="midNavbar">
+            <div class="midMid">
+            <div>
+                <h1>YOOX</h1>
+            </div>
+            </div>
+                
+        <div class="midRight">
+            <h2>Need Help</h2>
+        </div>
+</div>
+    <div id="main">
+   <div id="leftdiv">
+       <h2>
+           PAYMENT
+       </h2>
+       <p>Credit card</p>
+       <h4>New Card</h4>
+       <p>Enter Payment detils</p>
+       <input type="text" id="one" placeholder="card holder name" required>
+       <input type="text" id="two" placeholder="card number" required>
+       <input type="text" id="three" placeholder="expiry date" required>
+       <input type="text" id="four" placeholder="enter cvv" required>
+       <p>YOOX may contact you for further payment verification prior to shipping your order. In this case, delivery times may be subject to delay.</p>
+       <h4>Billing Address</h4>
+       <h4>17/733-a</h4>
+       <h4>Thilaknagar</h4>
+       <h4>Mahendra street</h4>
+       <h4>Guntakal</h4>
+       <h4>515801</h4>
+       <p>The personal information provided by you when purchasing items will be collected by YOOX in order to process your order and for other steps necessary to it, including operations related to administrative and fiscal obligations.
+        The telephone number you have provided may be used to communicate information related to the deliveries of your orders. The parties appointed for collecting your information are the staff responsible for managing the site and the services related to it, marketing, information systems and administration.
+        Consult our Privacy Policy for more information about your rights.
+        Consult our General Terms and Conditions of Sale.</p>
+        <button class="btn">PROCEED</button>
+   </div> 
+   <div id="rightdiv">
+   <h1>YOUR ORDER</h1>
+   <h4>Total for items</h4>
+   <p>1999/-</p>
+   <h4>Shipping</h4>
+   <p>Express 3-6 business days</p>
+   <h4>SHIPPING COSTS</h4>
+   <p>30/-</p>
+   <h4>PAYMENT</h4>
+   <p>Free - Credit Card</p>
+   <h4>Order total</h4>
+   <h4>1999/-</h4>
+   </div>
+    </div>>
+</body>
+</html>
+<script>
+    var pay = JSON.parse(localStorage.getItem("finalpayment")) || [];
+
+document.querySelector(".btn").addEventListener("click", function () {
+    alert("Your Order Is succefull");
+    window.location.href = "Homepage.html";
+})
+
+document.querySelector("#random").addEventListener("click", function () {
+    alert("Your Order Is succefull");
+    window.location.href = "Homepage.html";
+})
+</script>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYOOX</title>
+    <style>
+        #container{
+            background-color: gray;
+            text-align: center;
+            
+        }
+        #sign{
+            margin: 0 auto;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0.9em 4em;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        #sign>h3{
+            text-align: center;
+            font-size: large;
+            margin-right: 50px;
+        }
+        #submit{
+            margin-top: 1em;
+            /* background-color: rgb(143, 143, 143); */
+            background-color: rgb(68, 181, 185);
+            color: snow;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 0.9em;
+            border-radius: 0.2em;
+        }
+        #sub{
+            margin-top: 1em;
+            /* background-color: rgb(143, 143, 143); */
+            
+            color:red;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 0.9em;
+            border-radius: 0.2em;
+        }
+        #sign>p{
+            text-align: center;
+
+
+        }
+        form {
+            margin-bottom: 0.5em;
+        }
+        #submit {
+            margin-top: 1em;
+            /* background-color: rgb(143, 143, 143); */
+            background-color: rgb(68, 181, 185);
+            color: snow;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 0.9em;
+            border-radius: 0.2em;
+        }
+        input {
+            display: block;
+            height: 40px;
+            width: 90%;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #whatsapp,label{
+            width: 20px;
+            height: 12px;
+            display: inline;
+        }
+        #header{
+            position:sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            margin-top: -6px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #topNavbar{
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color:rgb(250, 245, 245);
+        }
+        .left>a{
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 2px solid black;
+
+        }
+    
+        .middle{
+            text-align: center;
+            margin-top: -20px;
+        }
+        .right>a{
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+ 
+        }
+        #midNavbar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+            margin-top: -0.30%;
+            position: fixed;
+            background-color: white;
+
+            
+        }
+        .midleft{
+            margin-left: -40px;
+        }
+
+        .midleft>a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .midMid{
+
+            text-align: center;
+            margin-top: -20px;
+           
+        
+        }
+        .midRight>a>img{
+            width: 30px;
+            height: 30px;
+          
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header"><a href="Homepage.html"></a>
+
+        <div id="topNavbar">
+            <div class="left">
+                <a href="">INDIA</a>
+                <a href="">Customer care</a>
+    
+            </div>
+            <div class="middle">
+                <h6>EASY RETURN, OUR COURIER WILL PICK IT UP</h6>
+                
+            </div>
+            <div class="left">
+                <a href="">Register</a>
+                <a href="">Login</a>
+    
+            </div>
+    
+        </div>
+        <div id="midNavbar">
+            <div>
+                <div class="midleft">
+                    <a href="Mens.html">MEN</a>
+                    <a href="Womens.html">WOMEN</a>
+                    <a href="Accessories.html">KIDS</a>
+                </div>
+            </div>
+                <div class="midMid">
+                <div>
+                    <h1>YOOX</h1>
+                </div>
+                </div>
+                    
+            <div class="midRight">
+                <a id="searchLogo" href=""><img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt=""></a>  
+                <a href="wishlist.html"><img
+                        src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-128.png"
+                        alt="wishlist"></a>
+                <a href="AddToCart.html"><img
+                        src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/buy-bag-cart-shop-shopping-128.png"
+                        alt="cart"></a>
+            </div>
+    </div>
+    <div id="container">
+        <h3>MYOOX</h3>
+        <p>REGISTRATION</p>
+        <p>Take advantage of a faster checkout and enjoy promotions for registered customers only
+        </p>
+        <h5>Discover All The Units</h5>
+
+    </div>
+    <div id="sign">
+        <h3 >REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</h3>
+        <input type="submit" value="REGISTER WITH FACEBOOK" id="submit"> 
+        <a href="Homepage.html"><input type="submit" value="REGISTER WITH GOOGLE" id="sub"></a> 
+        <p>OR WITH YOUR EMAIL</p>
+        <input type="text" placeholder="Full Name" id="name" class="input-field" required>
+        <input type="number" placeholder="Mobile" id="phone" class="input-field" required>
+        <input type="text" placeholder="Email ID" id="email" class="input-field" required>
+        <input type="password" placeholder="Password" id="password" class="input-field" required>
+        <form>
+            <input type="checkbox" id="whatsapp" name="whatsapp">
+            <label for="whatsapp"> I declare that I have read and accept the MYOOX Terms and Conditions of Use</label>
+        </form>
+        <a href="Homepage.html"><input type="submit" value="REGISTER" id="submit"></a>
+        
+
+    </div>
+</body>
+</html>

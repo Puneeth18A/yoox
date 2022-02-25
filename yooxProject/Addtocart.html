@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #header{
+            position:sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            margin-top: -6px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #topNavbar{
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color:rgb(250, 245, 245);
+        }
+        .left>a{
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-bottom: 2px solid black;
+
+        }
+    
+        .middle{
+            text-align: center;
+            margin-top: -20px;
+        }
+        .right>a{
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+ 
+        }
+        #midNavbar {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+            margin-top: -0.30%;
+            position: fixed;
+            background-color: white;
+
+            
+        }
+        .midleft{
+            margin-left: -40px;
+        }
+
+        .midleft>a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .midMid{
+
+            text-align: center;
+            margin-top: -20px;
+           
+        
+        }
+        .midRight>a>img{
+            width: 30px;
+            height: 30px;
+          
+        }
+    .bodyaddtocart {
+  width: 85%;
+  margin: auto;
+}
+.cartheader {
+  width: 100%;
+}
+.cartheader > h4 {
+  height: 10px;
+  padding: 5px;
+}
+.cart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#leftdiv {
+  width: 60%;
+}
+#rightdiv{
+    width: 40%;
+}
+#giftlogo {
+  width: 19px;
+  height: 12px;
+}
+.hedad {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.hedad > span {
+  font-size: 14px;
+  color: black;
+  font-family: Montserrat;
+  margin-left: 10px;
+}
+#righthead {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: gold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#righthead > p {
+  font-size: 20px;
+  color: black;
+  font-family: Montserrat;
+  margin-left: 10px;
+}
+#cuppon {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(234, 234, 234);
+  background-color: rgb(255, 255, 255);
+  color: rgb(45, 45, 45);
+  font-family: Montserrat-Regular;
+  line-height: 1.44;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+#havecuppon {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border: 1px solid #eaeaea;
+  background: rgba(66, 162, 161, 0.1);
+  cursor: pointer;
+}
+#havecuppon > span {
+  color: #42a2a2;
+}
+.summery {
+  padding: 10px;
+}
+#paymenthead > h4 {
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.summery {
+  margin-top: 5px;
+  padding: 15px 20px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(234, 234, 234);
+}
+.paymentboxInner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: montserrat-regular, sans-serif;
+  font-size: 14px;
+  line-height: 0.2;
+  padding-bottom: 10px;
+}
+.saving {
+  background: rgba(29, 136, 2, 0.1);
+  border-radius: 14px;
+  padding: 6px 10px;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-family: montserrat, sans-serif;
+  color: rgb(29, 136, 2);
+}
+.paymentfooter>span{
+    display: block;
+    font-size: 12px;
+    font-family: montserrat,sans-serif;
+    color: #000;
+    line-height: 14px;
+    padding: 0 0 4px;
+}
+.paymentfooter{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 96%;
+    border: 1px solid rgb(234, 234, 234);
+}
+#btnadd {
+    background: rgb(66,162,162);
+    border-color: rgb(66, 162, 162);
+    color: white;
+    width: 280px;
+    cursor: pointer;
+}
+/* -------------------cart item-------------------- */
+#itemdiv{
+    display: flex;
+    border: 1px solid rgb(234, 234, 234);
+}
+#itemdiv>div{
+    width: 50%;
+}
+.cartbtn{
+  width: 100%;
+  text-align: center;
+  color: rgb(117, 116, 116);
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+#imagediv>img{
+  width: 90px;
+  height: 100px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+#textdiv,#imagediv{
+  height: 250px;
+  position: relative;
+  padding: 20px;
+}
+#strik{
+  text-decoration: line-through;
+}
+/* -------------cuppon------------ */
+.cuppon{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.cointa{
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+#code{
+  width: 250px;
+  height: 30px;
+  font-size: 1.2em;
+  border: 0;
+  border-bottom: 2px solid rgb(66,162,162);
+}
+#apply{
+  display: block;
+  width: 230px;
+  font-size: 1.5em;
+  height: 50px;
+  margin:20px auto;
+  background-color: rgb(66,162,162);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: rotate(45deg);
+  font-size: 2em;
+  cursor: pointer;
+}
+#code:focus{
+  outline: none;
+}
+@media only screen and (min-width:0px) and (max-width:700px){
+  .cart{
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="header"><a href="Homepage.html"></a>
+
+        <div id="topNavbar">
+            <div class="left">
+                <a href="">INDIA</a>
+                <a href="">Customer care</a>
+    
+            </div>
+            <div class="middle">
+                <h6>EASY RETURN, OUR COURIER WILL PICK IT UP</h6>
+                
+            </div>
+            <div class="left">
+                <a href="signup.html">Register</a>
+                <a href="">Login</a>
+    
+            </div>
+    
+        </div>
+        <div id="midNavbar">
+            <div>
+                <div class="midleft">
+                    <a href="Mens.html">MEN</a>
+                    <a href="Womens.html">WOMEN</a>
+                    <a href="Accessories.html">KIDS</a>
+                </div>
+            </div>
+                <div class="midMid">
+                <div>
+                    <h1>YOOX</h1>
+                </div>
+                </div>
+                    
+            <div class="midRight">
+                <a id="searchLogo" href=""><img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" alt=""></a>  
+                <a href="wishlist.html"><img
+                        src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-128.png"
+                        alt="wishlist"></a>
+                <a href="AddToCart.html"><img
+                        src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/buy-bag-cart-shop-shopping-128.png"
+                        alt="cart"></a>
+            </div>
+    </div>
+    <div class="bodyaddtocart">
+        <div class="cartheader">
+          <h4 id="totalitem"> </h4>
+        </div>
+       <div class="cart">
+
+<!-- -------------------------left box----------------------------- -->
+         <div id="leftdiv">
+            <div class="hedad">
+              <img src="https://images.bewakoof.com/web/Red-truck.png" alt="giftlogo" id="giftlogo">
+              <span>Yay! You get FREE delivery on this order</span>
+            </div>
+            <div class="contein">
+        <img src="https://images.bewakoof.com/t540/jet-black-half-sleeve-t-shirt-106-1639137606-1.jpg">
+          </div>
+        </div>
+
+<!-- ---------------------------right box------------------------- -->
+
+        <div id="rightdiv">
+            <div id="righthead">
+              <p>Save extra </p>
+            </div>
+            <div id="cuppon">
+              <span>Get Rs.100 instant discount on your First Purchase above Rs.499. Coupon code - NEW100</span>
+            </div>
+            <div id="havecuppon">
+              <span>Have a Coupon / Referral / Gift Card ?</span>
+              <img src="https://images.bewakoof.com/web/coupon-redeem-arrow-1634641878.png">
+            </div>
+            <div class="summery">
+               <div id="paymenthead">
+                 <h4">Pice summery</h4>
+               </div>
+               <div class="paymentbox">
+                  <div class="paymentboxInner">
+                    <p>Total MRP (Incl. of taxes)</p>
+                    <p id="totalprice">total</p>
+                  </div>
+                  <div class="paymentboxInner">
+                    <p>Delivery Fee</p>
+                    <p style="color: rgb(29, 136, 2);">FREE</p>
+                  </div>
+                  <div class="paymentboxInner">
+                    <p>Bag Discount</p>
+                    <p>Discount</p>
+                  </div>
+                  <div class="paymentboxInner">
+                    <p>Combo Offer Discount</p>
+                    <p>0</p>
+                  </div>
+                  <div class="paymentboxInner">
+                    <p>Subtotal</p>
+                    <p id="subtotal">total</p>
+                  </div>
+                  <div class="saving">
+                    <p>You are saving <span></span> on this order</p>
+                  </div>
+               </div>
+            </div>
+            <div class="paymentfooter">
+              <div>
+                <span>Total</span>
+                <p id="paymenttotal">total</p>
+              </div>
+              <button id="btnadd"><a href="payment.html">Payment</a></button>
+           </div>
+        </div>
+      </div>
+  
+    </div>
+
+
+  </din>
+
+  <div class="cuppon">
+    <div class="cointa">
+      <div id="close">+</div>
+      <h3>Have a Coupon / Gift Card?</h3>
+      <input type="text" id="code" placeholder="ENTER CODE">
+      <input type="submit" value="APPLY" id="apply">
+    </div>
+  </div>
+</body>
+</html>
+<script>
+    var cartbag = JSON.parse(localStorage.getItem("addtobag")) || [];
+    var wish=JSON.parse(localStorage.getItem("Wishlist")) || [];
+    var cupponarr=[]; 
+    var finalpayment=[];
+    initian(cartbag);
+    createle(cartbag);
+    totalpr(cartbag);
+    function initian(cartbag){
+      if (cartbag.length > 0) {
+      document.querySelector(".emptyarrdiv").style.display="none";
+  
+      }else{
+        document.querySelector(".bodyaddtocart").style.display="none";
+        document.querySelector(".emptyarrdiv").style.display="";
+      }
+    };
+  
+    function createle(cartbag){
+    document.querySelector(".contein").innerHTML="";
+    cartbag.map(function creatbody(obj,index){
+    var div=document.createElement("div");
+    div.setAttribute("id","itemdiv");
+  
+    var div1=document.createElement("div");
+    div1.setAttribute("id","textdiv");
+    var name=document.createElement("p");
+    name.textContent=obj.name;
+    var pri=document.createElement("span");
+    pri.textContent=obj.price+" ";
+    var strikpri=document.createElement("span");
+    strikpri.setAttribute("id","strik");
+    strikpri.textContent=obj.strikedoffprice;
+  
+    var qun=document.createElement("span");
+    qun.textContent="Qun:1";
+    qun.style.display="block";
+  
+    var remo=document.createElement("button");
+    remo.setAttribute("class","cartbtn");
+    remo.textContent="Remove";
+    remo.style.display="block";
+    remo.addEventListener("click",function(){
+             deleteitem(index);
+        });
+  
+    var div2=document.createElement("div");
+    div2.setAttribute("id","imagediv");
+  
+    var img=document.createElement("img");
+    img.setAttribute("src",obj.image_url);
+    img.style.display="block";
+  
+    var move=document.createElement("button");
+    move.setAttribute("class","cartbtn");
+    move.setAttribute("id","movetowish");
+    move.textContent="Move To Wishlist";
+    move.addEventListener("click",function(){
+             pushitem(obj);
+        });
+  
+    div1.append(name,pri,strikpri,qun,remo);
+    div2.append(img,move);
+    div.append(div1,div2);
+    document.querySelector(".contein").append(div);
+    totalitembag(index);
+      })
+    };
+    function deleteitem(index){
+      cartbag.splice(index,1);
+       localStorage.setItem("addtobag",JSON.stringify(cartbag));
+       createle(cartbag);
+       initian(cartbag);
+       totalpr(cartbag)
+    };
+    function pushitem(obj){
+      wish.push(obj);
+      localStorage.setItem("Wishlist",JSON.stringify(wish));
+      alert("Item Added To Wishlist")
+    }
+  
+    function totalitembag(index){
+      document.querySelector("#totalitem").textContent=`My Bag ${index+1}item`;
+    }
+    function totalpr(cartbag){
+      var total= cartbag.reduce(function (ac,cv){
+      return ac += Number(cv.price);
+      },0)
+      if(cupponarr.length>0){
+        document.querySelector("#subtotal").textContent=Number(total)-200;
+        document.querySelector("#paymenttotal").textContent=Number(total)-200;
+        finalpayment.push(Number(total)-200);
+        localStorage.setItem("finalpayment",JSON.stringify(finalpayment));
+      }else{
+        document.querySelector("#subtotal").textContent=total;
+        document.querySelector("#paymenttotal").textContent=total;
+        finalpayment.push(total);
+        localStorage.setItem("finalpayment",JSON.stringify(finalpayment));
+      }
+      document.querySelector("#totalprice").textContent=total;
+    }
+    document.querySelector("#havecuppon").addEventListener("click",function (){
+      document.querySelector(".cuppon").style.display="flex";
+    });
+    document.querySelector("#close").addEventListener("click",function (){
+      document.querySelector(".cuppon").style.display="none";
+    });
+    document.querySelector("#apply").addEventListener("click",function (){
+     var code= document.querySelector("#code").value;
+     if(code == "BEWAKOOF6"){
+       alert("Cuoppen code apply succesfully");
+       cupponarr.push("yes");
+       console.log(cupponarr);
+       totalpr(cartbag);
+     }else{
+       alert("This cuppon code is not valid");
+     }
+    });
+    document.querySelector("#btnadd").addEventListener("click",function (){
+      window.location.href="pay.html";
+    })
+  </script>
+  
